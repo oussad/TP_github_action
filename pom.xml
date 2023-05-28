@@ -80,17 +80,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<build>
-                        <plugins>
-                        <plugin>
-                                 <groupId>org.apache.maven.plugins</groupId>
-                                 <artifactId>maven-compiler-plugin</artifactId>
-                                 <version>3.8.1</version> <!-- Utilisez la dernière version stable -->
-                                 <Configuration>
-                                              <!-- Configurations supplémentaires si nécessaires -->
-                                 </configuration>
-                         </plugin>
-                           
 		</plugins>
 	</build>
 </project>
