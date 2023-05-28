@@ -90,9 +90,7 @@
                                               <!-- Configurations supplémentaires si nécessaires -->
                                  </configuration>
                          </plugin>
-                               <!-- Autres plugins -->
-                                </plugins>
-                        </build>
+                           
 		</plugins>
 	</build>
 </project>
