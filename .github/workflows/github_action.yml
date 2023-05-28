@@ -25,6 +25,12 @@ jobs:
 
       - name: Exécution des tests
         run: mvn test
+      - name: Générer le rapport d'exécution
+        run: mvn verify
+      - name: Archiver le rapport d'exécution
+        uses: actions/upload-artifact@v2
+        with:
+         name: Rapport d'exécution
+         path: target/masterthought-report
 
-      - name: Générer le rapport HTML
-        run: mvn net.masterthought:maven-cucumber-reporting:5.7.2:generate
+     
