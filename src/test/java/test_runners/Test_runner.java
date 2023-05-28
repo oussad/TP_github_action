@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 glue = { "steps" }, 
 tags = "@tag8",
 monochrome = true, 
-plugin = { "pretty","html:rapport01.html" },
+//plugin = { "pretty","html:rapport01.html" },
 //plugin = { "pretty","json:target/json-report/cucumber.json" },
 dryRun = false
 
