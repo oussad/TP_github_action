@@ -5,32 +5,23 @@ jobs:
   check-bats-version:
     runs-on: windows-latest
     steps:
-      - name: Checkout du code source
-        uses: actions/checkout@v2
+    - name: Checkout du code source
+      uses: actions/checkout@v2
 
-      - name: Configuration de Java
-        uses: actions/setup-java@v1
-        with:
-          java-version: '17'
-          distribution: 'jdk'
+    - name: Configuration de Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: '17'
+        distribution: 'jdk'
 
-      - name: Configuration de Maven
-        uses: actions/setup-java@v1
-        with:
-          java-version: '17'
-          distribution: 'maven'
+    - name: Configuration de Maven
+      uses: actions/setup-java@v1
+      with:
+        java-version: '17'
+        distribution: 'maven'
 
-      - name: Construction du projet
-        run: mvn clean install
+    - name: Construction du projet
+      run: mvn clean install
 
-      - name: Exécution des tests
-        run: mvn test
-      - name: Générer le rapport d'exécution
-        run: mvn verify
-      - name: Archiver le rapport d'exécution
-        uses: actions/upload-artifact@v2
-        with:
-         name: Rapport d'exécution
-         path: target/masterthought-report
-
-     
+    - name: Exécution des tests
+      run: mvn test
