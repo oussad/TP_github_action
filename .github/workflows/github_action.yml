@@ -1,5 +1,5 @@
-name: test cucumbers
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: TP test cucumbers
+run-name: ${{ github.actor }} is  GitHub Actions
 on: [push]
 jobs:
   check-bats-version:
